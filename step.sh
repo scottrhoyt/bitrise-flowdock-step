@@ -1,8 +1,8 @@
 #!/bin/bash
 
-THIS_SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source "${THIS_SCRIPTDIR}/_bash_utils/utils.sh"
-source "${THIS_SCRIPTDIR}/_bash_utils/formatted_output.sh"
+THIS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "${THIS_SCRIPT_DIR}/_bash_utils/utils.sh"
+source "${THIS_SCRIPT_DIR}/_bash_utils/formatted_output.sh"
 
 # ------------------------------
 # --- Init Output
@@ -25,7 +25,7 @@ write_section_to_formatted_output "# Setup"
 bash "${THIS_SCRIPT_DIR}/_setup.sh"
 fail_if_cmd_error "Failed to setup the required tools!"
 
-resp=$(ruby "${THIS_SCRIPTDIR}/flowdock.rb")
+resp=$(ruby "${THIS_SCRIPT_DIR}/flowdock.rb")
 ex_code=$?
 
 if [ ${ex_code} -eq 0 ] ; then
