@@ -4,7 +4,7 @@ command_exists () {
 	command -v "$1" >/dev/null 2>&1 ;
 }
 
-gem_name="deliver"
+gem_name="flowdock"
 
 if command_exists $gem_name ; then
 	echo " (i) $gem_name already installed"
