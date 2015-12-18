@@ -20,7 +20,7 @@ type_tags:
   - notifiction
 is_requires_admin_user: true
 is_always_run: true
-is_skippable: false
+is_skippable: true
 run_if: ""
 inputs:
   - flowdock_source_token:
@@ -32,6 +32,4 @@ inputs:
         Flowdock account's developer applications. From there create a source token
         for the desired flow, and use that token here. More information can be found
         at the [Flowdock API Reference](https://www.flowdock.com/api/developing-integrations)
-      is_expand: false
       is_required: true
-      is_dont_change_value: true
