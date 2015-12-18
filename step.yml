@@ -13,9 +13,9 @@ description: |-
   2. Copy the files from this folder into your repository
   3. That's all, you can use it on your own machine
   4. Once you're happy with it you can share it with others.
-website: https://github.com/...
-source_code_url: https://github.com/...
-support_url: https://github.com/.../issues
+website: https://github.com/scottrhoyt/bitrise-flowdock-step
+source_code_url: https://github.com/scottrhoyt/bitrise-flowdock-step
+support_url: https://github.com/scottrhoyt/bitrise-flowdock-step/issues
 host_os_tags:
   - osx-10.10
 project_type_tags:
@@ -42,15 +42,3 @@ inputs:
       is_required: true
       is_dont_change_value: true
       value_options: []
-outputs:
-  - EXAMPLE_STEP_OUTPUT:
-    opts:
-      title: "Example Step Output"
-      summary: Summary. No more than 2-3 sentences.
-      description: |
-        Description of this output.
-
-        Can be Markdown formatted text.
-      is_expand: false
-      is_required: true
-      is_dont_change_value: true
